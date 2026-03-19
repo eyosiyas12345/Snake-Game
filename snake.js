@@ -17,6 +17,7 @@ let gameOver = false;
 body.style.backgroundImage = 'url("bg.jpg")';
 body.style.textAlign = 'center';
 body.style.margin = '10px';
+body.height = '100vh';
 canva.style.backgroundColor = 'black';
 
 score.style.fontSize = '30px';
@@ -77,7 +78,6 @@ score.innerHTML = parseInt(score.innerHTML) + 1;
 food.x = Math.floor(Math.random()*canvaRow)*scale;
 food.y = Math.floor(Math.random()*canvaColumn)*scale;
   snake.unshift(newHead);
-
   }
 }
 
